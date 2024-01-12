@@ -1,0 +1,187 @@
+html {
+  font-size: 62.5%;
+}
+
+#main-container {
+  display: flexbox;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #27374d;
+  color: #d0d0d0c7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Beginning Point Of Top-footer CSS */
+#top-footer {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 5px;
+  padding: 40px 20px 22px 20px;
+  justify-content: space-around;
+}
+
+.top-element {
+  height: 100px;
+  background-color: #253140;
+  border-radius: 30px / 50px;
+  text-align: center;
+  /* margin: 0 0;
+    padding: 0 0; */
+  padding-top: 20px;
+}
+
+.top-element:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.top-element p {
+  font-size: 1.2rem;
+  color: #f7c5c5;
+}
+/* End Point Of Top-footer CSS */
+
+/* Beginning Point Of Mid-footer CSS */
+#mid-footer {
+  padding: 10px 30px;
+  display: grid;
+  grid-template-columns: 38% 30% 30%;
+  grid-gap: 10px;
+}
+
+.mid-card {
+  height: auto;
+  background-color: #253140;
+  padding: 10px 10px;
+  margin: 10px 5px;
+  border-radius: 10px;
+}
+
+.mid-card-pages img {
+  width: 70px;
+  height: 70px;
+  padding: 5px 15px;
+}
+
+.mid-card-pages img:hover {
+  transform: scale(1.2);
+}
+
+.feedback-email {
+  width: 353px;
+  height: 40px;
+  color: #809eb5;
+  background-color: #2f3f55;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.feedback-text {
+  background-color: #2f3f55;
+  border: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.feedback-submit-button {
+  width: 100px;
+  height: 40px;
+  color: #809eb5;
+  background-color: #445670;
+  border: none;
+  border-radius: 5px;
+}
+
+.feedback-submit-button:hover {
+  background-color: #fff;
+  color: #1e2d40;
+}
+
+.links {
+  height: auto;
+  width: 150px;
+  display: inline-block;
+  line-height: 2rem;
+  margin: 5px 20px;
+}
+
+.links img {
+  width: 250px;
+  height: 70px;
+}
+
+.links a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  line-height: 30px;
+  color: #f7c5c5;
+  display: inline-block;
+}
+
+.links a:hover {
+  color: #e77930;
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.links td {
+  padding: 10px 20px;
+}
+
+.horizontal-line {
+  height: 4px;
+  position: sticky;
+  margin: 0 45px;
+  background-color: #e77930;
+  border: none;
+}
+/* End Point Of Mid-footer CSS */
+
+#bottom-footer {
+  height: 60px;
+  margin-top: 10px;
+  background-color: #1e2d40;
+  color: #fff;
+  text-align: center;
+}
+
+#bottom-footer a {
+  text-decoration: underline;
+  color: #f7c5c5;
+}
+
+.header1 {
+  font-size: 2.3rem;
+  color: #b0c0ef;
+}
+
+@media only screen and (max-width: 760px) {
+  #top-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #top-footer {
+    grid-template-columns: 1fr;
+  }
+}
+/* @media only screen and (min-width:401px) and (max-width:960px){
+    .mainContainer,.OurValues,.OurValuesContainer,.OurValues2,.OurValues2Container{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+    .aboutValues,.OurGoal{
+        width: 100%;
+        height: auto;
+    }
+    .value1,.value2,.value3{
+        width: 33.3%;
+        height: auto;
+    }
+    .value4,.value5{
+        width:50%;
+        height:auto;
+    }
+} */

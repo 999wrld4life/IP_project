@@ -1,0 +1,157 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: url(https://fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHh30AUi-qJCY.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  } */
+.mainContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.OurValuesContainer{
+    color: #253342;
+    background-color: #fff;
+    width:100%;
+    display: flex;
+    justify-self: center;
+}
+.OurValues{
+    width: 100%;
+    height: 285px;
+    display: flex;
+    justify-content: center;
+}
+.OurValues2Container{
+    color: #253342;
+    width:100%;
+    display: flex;
+    justify-self: center;
+}
+.OurValues2{
+    width: 100%;
+    height: 285px;
+    display: flex;
+    justify-content: center;
+}
+.aboutValues{
+    padding: 60px 20px 20px;
+    width: 40%;
+}
+.value1,.value2, .value3{
+    width: 20%;
+    padding: 40px 20px 20px;
+}
+.value1:hover,.value2:hover, .value3:hover,.value4:hover,.value5:hover{
+    background-color: #d5dadf;
+    -webkit-transition: background 0.8s; /* For Safari 3.0 to 6.0 */
+    transition:background 0.8s; /* For modern browsers */
+}
+.value4,.value5{
+    width: 20%;
+    padding: 40px 20px 20px;
+}
+.aboutTitle, .OurGoalTitle{
+    color:#00A9FA;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.par{
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: 'Lato';
+    /* font-family: Poppins, sans-serif; */
+}
+.value1Title,.value2Title,.value3Title,.value4Title,.value5Title{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fa{
+    padding-bottom: 5px;
+}
+.OurGoal{
+    padding: 20px 20px 20px;
+    width:60%;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #00A9FA;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  padding: 7px 0px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 13px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media only screen and (max-width:400px) {
+
+    .mainContainer,.OurValues,.OurValuesContainer,.OurValues2,.OurValues2Container{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+   .aboutValues,.value1,.value2,.value3,.value4,.value5,.OurGoal{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (min-width:401px) and (max-width:960px){
+    .mainContainer,.OurValues,.OurValuesContainer,.OurValues2,.OurValues2Container{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+    .aboutValues,.OurGoal{
+        width: 100%;
+        height: auto;
+    }
+    .value1,.value2,.value3{
+        width: 33.3%;
+        height: auto;
+    }
+    .value4,.value5{
+        width:50%;
+        height:auto;
+    }
+}

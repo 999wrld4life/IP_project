@@ -1,0 +1,223 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+.main {
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+.heading h1 {
+  color: #ff6347;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 35px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90% auto;
+  margin: 65px auto;
+}
+.main-content {
+  flex: 1;
+  width: 600px;
+  margin: 0px 25px;
+  animation: fadeInUp 2s ease;
+}
+.main-content h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.main-content p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #666;
+}
+.main-content button {
+  display: inline-block;
+  background-color: #ff4500;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.main-content button:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+.main-image {
+  flex: 1;
+  width: 600px;
+  margin: auto;
+  animation: fadeInRight 2s ease;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .heading h1 {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  .main {
+    margin: 0px;
+  }
+  .container {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px 40px;
+  }
+  .main-content {
+    width: 100%;
+    margin: 35px 0px;
+  }
+  .main-content h2 {
+    font-size: 30px;
+  }
+  .main-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .main-content button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .main-image {
+    width: 100%;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f0f0f0;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+/* .card-container {
+  margin-top: 40px;
+ 
+} */
+.hidden {
+  display: none;
+}
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; /* Position on the top right */
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  background: none;
+  border: none;
+  height: calc(100% - 2rem); /* Cover the whole row height */
+  bottom: 1rem; /* Lower the close button */
+  transition: background 0.3s ease-in-out;
+}
+
+.close-modal:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.card {
+  width: 325px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  margin-top: 50px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 16px;
+}
+.card-content h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.card-content p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+@media screen and (max-width: 768px) {
+  .card-container {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
+    margin-top: 60px; /* Adjust margin for smaller screens */
+  }
+
+  .close-modal {
+    top: 0.5rem; /* Adjust top position for smaller screens */
+    right: 0.5rem; /* Adjust right position for smaller screens */
+    bottom: 0.5rem; /* Adjust bottom position for smaller screens */
+    left: 0.5rem; /* Adjust left position for smaller screens */
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}

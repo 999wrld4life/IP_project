@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center-text {
+  text-align: center;
+}
+.margin-bottom-big {
+  margin-bottom: 8rem;
+}
+.margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+.margin-top-big {
+  margin-top: 8rem;
+}
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, green, rgb(203, 203, 56), red);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.section-stories {
+  position: relative;
+  padding: 15rem 0;
+}
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+}
+.story-shape {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translateX(-3rem) skewX(12deg);
+  position: relative;
+}
+.story-img {
+  height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  backface-visibility: hidden;
+  transition: all 0.5s;
+}
+.story-text {
+  transform: skewX(12deg);
+}
+.story-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+.story:hover .story-caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.story:hover .story-img {
+  transform: translateX(-4rem) scale(1);
+  filter: blur(3px) brightness(80%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  overflow: hidden;
+}
+.bg-video-content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+section .btn-text:link,
+section .btn-text:visited {
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #55c57a;
+  border-bottom: 1px solid #55c57a;
+  padding: 4px;
+  transition: all 0.2s;
+}
+section .btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  transform: translateY(-2rem);
+
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+section .btn-text:active {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+@media only screen and (max-width: 768px) {
+  .body {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .story {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+  }
+  .margin-bottom-big {
+    margin-bottom: 5rem;
+  }
+
+  .story-text {
+    display: block;
+  }
+  .row {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .story {
+    transform: skewX(0);
+  }
+  .story-shape {
+    transform: translateX(-3rem) skewX(0);
+  }
+  .story-text {
+    transform: skewX(0);
+  }
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
