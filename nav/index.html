@@ -14,45 +14,44 @@
     <link rel="stylesheet" href="css/testimony.css" />
     <link rel="stylesheet" href="css/About_us/about.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <style>
-      @media only screen and (max-width: 768px) {
-        html {
-          width: 100%;
-        }
-      }
-    </style>
+
     <title>Document</title>
   </head>
   <body>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+    <section id="nav">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
 
-      <div class="navigation__background">&nbsp;</div>
+        <div class="navigation__background">&nbsp;</div>
 
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">About Us</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Testimonies</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Explore Now</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Blogs</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Book now</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#kelem" class="navigation__link">About Us</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#xo" class="navigation__link">Testimonies</a>
+            </li>
+            <li class="navigation__item">
+              <a href="Exploremore.html" class="navigation__link"
+                >Explore Now</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Blogs</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#fish" class="navigation__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
     <section class="eto">
       <div class="slider-container">
         <div class="slider">
@@ -240,12 +239,11 @@
               </p>
             </div>
           </div>
-          <!-- Add more slides as needed -->
         </div>
         <button class="prev" onclick="prevSlide()">&#10094;</button>
         <button class="next" onclick="nextSlide()">&#10095;</button>
       </div>
-      <a href="#section-tours" class="btn btn--white btn--animated"
+      <a href="Exploremore.html" class="btn btn--white btn--animated"
         >Explore More</a
       >
     </section>
@@ -336,7 +334,7 @@
         </div>
       </div>
     </section>
-    <section class="xo"></section>
+    <section id="xo"></section>
 
     <section class="section-stories">
       <div class="bg-video">
@@ -433,7 +431,7 @@
         <a href="#" class="btn-text">Read all stories &rarr;</a>
       </div>
     </section>
-    <section class="kelem">
+    <section id="kelem">
       <section class="main">
         <div class="heading">
           <h1>ABOUT US</h1>
@@ -507,7 +505,7 @@
       </div>
       <div class="overlay hidden"></div>
     </section>
-    <section class="fish">
+    <section id="fish">
       <footer id="main-container">
         <!-- Top Footer -->
         <div id="top-footer">
@@ -642,6 +640,7 @@
         </div>
       </footer>
     </section>
+    <script src="js/nav.js"></script>
     <script src="js/eto.js"></script>
     <script src="js/about.js"></script>
   </body>
