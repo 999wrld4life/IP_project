@@ -6,13 +6,6 @@ html{
     padding:0;
     box-sizing: border-box;
 }
-/* @font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 100;
-    src: url(https://fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHh30AUi-qJCY.woff2) format('woff2');
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  } */
 .mainContainer{
     width: 100%;
     display: flex;
@@ -20,6 +13,7 @@ html{
     flex-direction: column;
 }
 .OurValuesContainer{
+    /* border: solid; */
     color: #253342;
     background-color: #fff;
     width:100%;
@@ -28,11 +22,12 @@ html{
 }
 .OurValues{
     width: 100%;
-    height: 285px;
+    height: 320px;
     display: flex;
     justify-content: center;
 }
 .OurValues2Container{
+    /* border: solid; */
     color: #253342;
     width:100%;
     display: flex;
@@ -40,7 +35,7 @@ html{
 }
 .OurValues2{
     width: 100%;
-    height: 285px;
+    height: 320px;
     display: flex;
     justify-content: center;
 }
@@ -84,7 +79,7 @@ html{
     width:60%;
 }
 .button {
-  display: inline-block;
+  /* display: inline-block; */
   border-radius: 4px;
   background-color: #00A9FA;
   border: none;
@@ -93,34 +88,8 @@ html{
   font-size: 13px;
   padding: 7px 0px;
   width: 80px;
-  transition: all 0.5s;
   cursor: pointer;
   margin-top: 7px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -15px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 13px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 @media only screen and (max-width:400px) {
