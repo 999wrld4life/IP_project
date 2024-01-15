@@ -9,49 +9,53 @@
       rel="stylesheet"
     />
 
+    <!--for the icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/explore.css" />
     <link rel="stylesheet" href="css/WhatMakesUsUnique.css" />
     <link rel="stylesheet" href="css/testimony.css" />
     <link rel="stylesheet" href="css/About_us/about.css" />
     <link rel="stylesheet" href="css/footer.css" />
-
-    <title>Document</title>
+    <style>
+      @media only screen and (max-width: 768px) {
+        html {
+          width: 100%;
+        }
+      }
+    </style>
+    <title>EthioTours</title>
   </head>
   <body>
-    <section id="nav">
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
 
-        <div class="navigation__background">&nbsp;</div>
+      <div class="navigation__background">&nbsp;</div>
 
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#kelem" class="navigation__link">About Us</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#xo" class="navigation__link">Testimonies</a>
-            </li>
-            <li class="navigation__item">
-              <a href="Exploremore.html" class="navigation__link"
-                >Explore Now</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Blogs</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#fish" class="navigation__link">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About Us</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Testimonies</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Explore Now</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Blogs</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <section class="eto">
       <div class="slider-container">
         <div class="slider">
@@ -239,11 +243,12 @@
               </p>
             </div>
           </div>
+          <!-- Add more slides as needed -->
         </div>
         <button class="prev" onclick="prevSlide()">&#10094;</button>
         <button class="next" onclick="nextSlide()">&#10095;</button>
       </div>
-      <a href="Exploremore.html" class="btn btn--white btn--animated"
+      <a href="#section-tours" class="btn btn--white btn--animated"
         >Explore More</a
       >
     </section>
@@ -328,13 +333,14 @@
                 commitment to integrity and passion for excellence. Ready to
                 make us your travel partner? Reach out to us.
               </p>
-              <button class="button"><span>More</span></button>
+              <!-- <button class="button"><span>More</span></button> -->
+              <a href="Exploremore.html>"><button class="button">more</button></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="xo"></section>
+    <section class="xo"></section>
 
     <section class="section-stories">
       <div class="bg-video">
@@ -431,7 +437,7 @@
         <a href="#" class="btn-text">Read all stories &rarr;</a>
       </div>
     </section>
-    <section id="kelem">
+    <section class="kelem">
       <section class="main">
         <div class="heading">
           <h1>ABOUT US</h1>
@@ -505,7 +511,7 @@
       </div>
       <div class="overlay hidden"></div>
     </section>
-    <section id="fish">
+    <section class="fish">
       <footer id="main-container">
         <!-- Top Footer -->
         <div id="top-footer">
@@ -640,7 +646,6 @@
         </div>
       </footer>
     </section>
-    <script src="js/nav.js"></script>
     <script src="js/eto.js"></script>
     <script src="js/about.js"></script>
   </body>
