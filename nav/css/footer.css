@@ -3,7 +3,6 @@ html {
 }
 
 #main-container {
-  display: flexbox;
   display: flex;
   flex-flow: column wrap;
   background-color: #27374d;
@@ -13,10 +12,12 @@ html {
 
 /* Beginning Point Of Top-footer CSS */
 #top-footer {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: 20% 20% 20% 20%; */
   grid-gap: 5px;
-  padding: 40px 20px 22px 20px;
+  margin: 20px 0px;
   justify-content: space-around;
 }
 
@@ -25,8 +26,6 @@ html {
   background-color: #253140;
   border-radius: 30px / 50px;
   text-align: center;
-  /* margin: 0 0;
-    padding: 0 0; */
   padding-top: 20px;
 }
 
@@ -44,12 +43,15 @@ html {
 /* Beginning Point Of Mid-footer CSS */
 #mid-footer {
   padding: 10px 30px;
-  display: grid;
-  grid-template-columns: 38% 30% 30%;
-  grid-gap: 10px;
+  /* display: grid; */
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: 38% 30% 30%; */
+  /* grid-gap: 10px; */
 }
 
 .mid-card {
+  width: 32%;
   height: auto;
   background-color: #253140;
   padding: 10px 10px;
@@ -58,7 +60,7 @@ html {
 }
 
 .mid-card-pages img {
-  width: 70px;
+  width: 65px;
   height: 70px;
   padding: 5px 15px;
 }
@@ -68,7 +70,8 @@ html {
 }
 
 .feedback-email {
-  width: 353px;
+  width: 100%;
+  max-width: 353px;
   height: 40px;
   color: #809eb5;
   background-color: #2f3f55;
@@ -77,14 +80,17 @@ html {
   padding-left: 10px;
   margin-bottom: 10px;
 }
+
 .feedback-text {
+  width: 100%;
   background-color: #2f3f55;
   border: none;
   border-radius: 0 0 5px 5px;
 }
 
 .feedback-submit-button {
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
   height: 40px;
   color: #809eb5;
   background-color: #445670;
@@ -99,15 +105,15 @@ html {
 
 .links {
   height: auto;
-  width: 150px;
+  width: 100%;
   display: inline-block;
   line-height: 2rem;
   margin: 5px 20px;
 }
 
 .links img {
-  width: 250px;
-  height: 70px;
+  width: 100%;
+  height: auto;
 }
 
 .links a {
@@ -156,32 +162,17 @@ html {
 }
 
 @media only screen and (max-width: 760px) {
-  #top-footer {
-    grid-template-columns: 1fr 1fr;
+  #top-footer .top-element {
+    /* grid-template-columns: 1fr 1fr; */
+    width: 100%;
+  }
+  #mid-footer .mid-card{
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 560px) {
+/* @media only screen and (max-width: 560px) {
   #top-footer {
     grid-template-columns: 1fr;
   }
-}
-/* @media only screen and (min-width:401px) and (max-width:960px){
-    .mainContainer,.OurValues,.OurValuesContainer,.OurValues2,.OurValues2Container{
-        flex-wrap: wrap;
-        width: 100%;
-        height: auto;
-    }
-    .aboutValues,.OurGoal{
-        width: 100%;
-        height: auto;
-    }
-    .value1,.value2,.value3{
-        width: 33.3%;
-        height: auto;
-    }
-    .value4,.value5{
-        width:50%;
-        height:auto;
-    }
 } */
