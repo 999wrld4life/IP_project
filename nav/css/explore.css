@@ -1,6 +1,7 @@
 body {
   font-size: larger;
-  /* background-color: #999 ; */
+  color: red;
+  background-color: #9ec8b9;
 }
 .slider-container {
   width: 100%; /* Set the width of your slider container */
@@ -12,7 +13,9 @@ body {
   display: flex; /* Make the slider items flex containers */
   transition: transform 0.5s ease;
   background-color: rgba(255, 255, 255, 0.5, green, blue, alpha);
-  opacity: 55%; /* Add a smooth transition effect */
+  opacity: 0.7; /* Add a smooth transition effect */
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
 }
 
 .slider-item {
@@ -23,7 +26,7 @@ body {
 
 .image {
   width: 100%; /* Make the image take 100% width of its container */
-  height: 100vh; /* Maintain the aspect ratio of the image */
+  height: 95vh; /* Maintain the aspect ratio of the image */
   display: block;
 }
 
@@ -73,7 +76,7 @@ body {
   cursor: pointer;
   position: absolute;
   bottom: 20px;
-  left: 40%;
+  left: 45%;
 }
 
 .btn:hover {
@@ -91,8 +94,8 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .btn--white {
-  background-color: #fff;
-  color: #777;
+  background-color: #5c8374;
+  color: white;
 }
 .btn--white::after {
   background-color: #fff;
@@ -115,8 +118,7 @@ body {
   z-index: -1;
   transition: all 0.4s;
 }
-.btn--animated,
-.text-overlay {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }

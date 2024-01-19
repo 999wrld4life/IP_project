@@ -1,84 +1,87 @@
-.html{
-    font-size: 62.5%;
+.html {
+  font-size: 62.5%;
 }
 
-.explore__body{
-background: (url(../IP\ images/EPA.jpg));
-}
-.card{
-    border-radius: 7px;
-    box-shadow: 0 0 50px 40px #f3f3f3; 
-    max-width: 70%;
-    overflow: hidden;
-    margin: 5rem 5rem;
-    transition: transform 0.5s;
-    align-self: center;
-}
-.card__header{
-    max-width: 100%;
-    max-height: 95%;
-}
-.card__body{
-    padding: 1rem 1rem;
-    font-family: 'Hedvig Letters Serif', Arial, Helvetica, sans-serif; 
-}
-.card__body .card__title{
-    font-size: larger;
-    font-weight: bolder;
+body {
+  background-color: #9ec8b9;
 }
 
-.card__body .card__price{
-    font-size: 20px;
-    font-weight: bolder;
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 50px 40px #93d1bb;
+  max-width: 110%;
+  min-width: 80%;
+  max-height: 90%;
+  min-height: 85%;
+  overflow: hidden;
+  margin: 5rem 5rem;
+  transition: transform 1s;
+  align-self: center;
+  background-color: #247a7a;
+  color: #f3f3f3;
+}
+.card__header {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card__body {
+  padding: 1rem 1rem;
+  font-family: "Hedvig Letters Serif", Arial, Helvetica, sans-serif;
+}
+.card__body .card__title {
+  font-size: larger;
+  font-weight: bolder;
 }
 
-
-.card__image{
-    min-width: 100%;
-    max-height: 15rem;
-    object-fit: cover;
-
+.card__body .card__price {
+  font-size: 20px;
+  font-weight: bolder;
 }
 
-.card__btn{
-    font-size: 1rem;
-    font-weight: 600rem;
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
-    border: 0;
-    border-radius: 40px;
+.card__image {
+  min-width: 100%;
+  max-height: 25rem;
+  object-fit: cover;
 }
 
-.card__btn__black{
-    background-color: black;
-    color: #f3f3f3;
+.card__btn {
+  font-size: 1rem;
+  font-weight: 600rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 40px;
 }
 
-.card:hover{
-    transform: scale(1.1);
+.card__btn__black {
+  background-color: #053131;
+  color: #f3f3f3;
 }
 
-.grid{
-    display: grid;
-    
+.card:hover {
+  transform: scale(1.1);
+  color: #247a7a;
+  background-color: #f3f3f3;
 }
 
-@media screen and (min-width:768px){
-
-    .grid--1x2{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .card{
-        width: 70%;
-    }
+.grid {
+  display: grid;
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 70%;
+  }
+}
 
-    .grid--1x3{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .card{
-        width: 70%;
-    }
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    width: 70%;
+  }
 }
